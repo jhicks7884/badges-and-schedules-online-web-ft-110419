@@ -7,10 +7,10 @@ end	end
 
 def batch_badge_creator(name)	def batch_badge_creator(attendees)
   badge_list = []	  attendees.map { |badges| badge_maker(badges) }
-  name.each do |badges|	
-    badge_maker(badges)	
-  end	
-  badge_list << badges	
+  name.each do |badges|
+    badge_maker(badges)
+  end
+  badge_list << badges
 end	end
 
 
